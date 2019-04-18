@@ -1,25 +1,21 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import TodoContainer from './TodoContainer';
+import MainWrapper from './components/MainWrapper';
+import FootWrapper from './components/FootWrapper';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
+      <div className="d-flex h-100 p-3 mx-auto flex-column">
+        <MainWrapper>
+          <TodoContainer />
+        </MainWrapper>
+        <FootWrapper>
           <p>
-            Edit <code>src/App.tsx</code> and save to reload.
+            Feito com ❤ por <a href="mailto://brunohcastro@gmail.com">Bruno Castro</a>,{' '}
+            <a href="https://twitter.com/brunohcastro">@brunohcastro</a>.
           </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        </FootWrapper>
       </div>
     );
   }

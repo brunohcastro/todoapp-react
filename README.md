@@ -1,5 +1,17 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## TODO APP
+
+Cliente em React para o sistema desenvolvido como desafio para candidato ESIG.
+
+## Tech Stack
+
+- Reactstrap 4 - Bootstrap Components for React
+- Bootstrap 4 - CSS Framework
+- Pretty Checkbox - Pretty CSS Checkboxes
+- Axios - HTTP Client
+- Styled Components - CSS-in-JS Solution
+
 ## Available Scripts
 
 In the project directory, you can run:

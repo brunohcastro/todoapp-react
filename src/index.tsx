@@ -3,6 +3,16 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'pretty-checkbox/dist/pretty-checkbox.min.css';
+
+import Axios from 'axios';
+
+if (process.env.NODE_ENV === 'development') {
+  Axios.defaults.baseURL = 'http://localhost:8080/api';
+} else {
+  Axios.defaults.baseURL = 'https://todoing-app.herokuapp.com/api';
+}
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
