@@ -9,7 +9,7 @@ import TodoListToolbar from './TodoListToolbar';
 import EmptyList from './components/EmptyList';
 
 export default function TodoContainer() {
-  const [editing, setEditing] = useState<number>(0);
+  const [editing, setEditing] = useState<number | null>();
   const [loading, setLoading] = useState(false);
   const [showMenu, setShowMenu] = useState(false);
   const [viewModel, setViewModel] = useState<TodoViewDTO>({
@@ -123,7 +123,12 @@ export default function TodoContainer() {
               onEdit={setEditing}
             />
           ) : (
-            <TodoEditForm key={todo.id} todo={todo} onCancel={() => setEditing(0)} onSubmit={handleUpdateDescription} />
+            <TodoEditForm
+              key={todo.id}
+              todo={todo}
+              onCancel={() => setEditing(null)}
+              onSubmit={handleUpdateDescription}
+            />
           )
         )}
       </ListGroup>
