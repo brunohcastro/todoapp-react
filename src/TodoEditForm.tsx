@@ -45,7 +45,7 @@ export default function TodoEditForm({ todo, ...props }: TodoEditForm) {
         </FlatButton>
         <TodoInput
           value={description}
-          onChange={e => setDescription(e.target.value)}
+          onChange={(e: any) => setDescription(e.target.value)}
           autoFocus
           onKeyDown={cancelOnEsc}
         />
