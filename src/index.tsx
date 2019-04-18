@@ -8,10 +8,10 @@ import 'pretty-checkbox/dist/pretty-checkbox.min.css';
 
 import Axios from 'axios';
 
-if (process.env.NODE_ENV === 'development') {
-  Axios.defaults.baseURL = 'http://localhost:8080/api';
+if (process.env.REACT_APP_BASE_URL) {
+  Axios.defaults.baseURL = `${process.env.REACT_APP_BASE_URL}/api`;
 } else {
-  Axios.defaults.baseURL = 'https://todoing-app.herokuapp.com/api';
+  Axios.defaults.baseURL = 'http://localhost:8080/api';
 }
 
 ReactDOM.render(<App />, document.getElementById('root'));

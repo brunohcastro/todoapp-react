@@ -50,7 +50,7 @@ export default function TodoCreateForm(props: TodoCreateFormProps) {
       <TodoInput
         type="text"
         value={description}
-        onChange={e => setDescription(e.target.value)}
+        onChange={(e: any) => setDescription(e.target.value)}
         autoFocus
         onKeyDown={cancelOnEsc}
       />

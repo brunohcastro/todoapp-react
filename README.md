@@ -2,7 +2,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## TODO APP
 
-Cliente em React para o sistema desenvolvido como desafio para candidato ESIG.
+Cliente em React para o sistema desenvolvido como desafio para candidato ESIG. 
+
+DEMO: https://todoing-react.herokuapp.com
 
 ## Tech Stack
 
